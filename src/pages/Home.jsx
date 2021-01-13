@@ -12,9 +12,9 @@ const Home=(props)=>{
     })
     const [search,setSearch] = useState(null)
     const [filterData,setFilterData] = useState(null)
-    const head = useRef(null)
+    // const head = useRef(null)
 
-    const executeScroll = () => head.current.scrollIntoView()
+    // const executeScroll = () => head.current.scrollIntoView()
 
     useEffect(()=>{
         setUsers(props.Inventory)
@@ -71,7 +71,7 @@ const Home=(props)=>{
                 offset: params.offset-4
             })
         }
-        executeScroll()
+        // executeScroll()
     }
 
     const getFilterData=async(param)=>{
@@ -102,7 +102,7 @@ const Home=(props)=>{
                     <p className='content-title'>Personnel List</p>
                     <p className='sub-title'>List of all personnels</p>
                 </div>
-                <div className="home-content" ref={head}>
+                <div className="home-content">
                     <div className="input-container">
                         <div className="icon">
                             <Icon.Search size={24}/>

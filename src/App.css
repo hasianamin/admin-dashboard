@@ -349,7 +349,7 @@ div {
     margin: 0;
     font-size: 16px;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   /* navbar */
@@ -391,7 +391,7 @@ div {
   /* home */
   .home {
     margin-left: 22vw;
-    padding-top: 120px;
+    padding-top: 80px;
     margin-right: 3vw;
   }
 
